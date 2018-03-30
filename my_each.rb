@@ -1,5 +1,13 @@
 def my_each(arg)
-  if !
+  if !block_given?
+    return puts "No block supplied!"
+  end
   
-  
+  mIdx = arg.length - 1
+  idx = 0
+  while (idx <= mIdx) do
+    
+    yield arg[idx]
+    idx += 1
+  end
 end
