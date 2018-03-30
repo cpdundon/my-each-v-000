@@ -1,6 +1,6 @@
 def my_each(arg)
   if !block_given?
-    return puts "No block supplied!"
+    return "No block supplied!"
   end
   
   mIdx = arg.length - 1
