@@ -10,4 +10,5 @@ def my_each(arg)
     yield arg[idx]
     idx += 1
   end
+  arg
 end
